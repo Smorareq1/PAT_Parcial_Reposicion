@@ -8,10 +8,10 @@ Node<int>* Ejercicio01::reverseLinkedList(Node<int>* head) { //reverse como en c
 
 
     while (current != nullptr) {
-        Node<int>* nxt = current->next;
+        next = current->next;
         current->next = prev;
         prev = current;
-        current = nxt;
+        current = next;
     }
     return prev;
 }
